@@ -13,14 +13,11 @@ Expected checkpoint files (configure via environment variables or config.py):
 import logging
 import threading
 from pathlib import Path
-import numpy as np
+
 import torch
 
 from models.architectures import build_model_v1, build_model_v2, AudioDeepfakeModel
 from config import settings
-
-
-# torch.serialization.add_safe_globals([np.core.multiarray.scalar]) ################
 
 logger = logging.getLogger(__name__)
 
